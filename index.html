@@ -5,16 +5,35 @@
     <style>
         body {
             background-color: black;
-            color: yellow;
+            color: white;
             text-align: center;
-            font-size: 50px;
+            font-size: 40px;
             margin-top: 20%;
+            font-family: Arial;
+            transition: 0.5s;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
         }
     </style>
 </head>
 <body>
 
-<h1>🎉 Happy April Fool 🎉</h1>
+    <h1 id="text">Click Me 😏</h1>
+    <button onclick="prank()">Click Here</button>
+
+    <script>
+        function prank() {
+            document.body.style.backgroundColor = "red";
+            document.body.style.color = "black";
+            document.getElementById("text").innerHTML = "😂 April Fool 😂";
+        }
+    </script>
 
 </body>
 </html>
